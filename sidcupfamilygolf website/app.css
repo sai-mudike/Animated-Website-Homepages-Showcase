@@ -1,0 +1,552 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    color: #fff;
+
+}
+
+*::selection {
+    background-color: #fff;
+    color: #91B508;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    cursor: default;
+}
+
+.cursor {
+    width: 20px;
+    height: 20px;
+    background-color: #ACDF22;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 999;
+
+}
+
+::-webkit-scrollbar {
+    background-color: #000;
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 100%;
+    background-color: #91B508;
+    border-radius: 50px;
+}
+
+nav {
+    padding: 0 8%;
+    height: 140px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+}
+
+.nav-part1 {
+    display: flex;
+    gap: 45px;
+    align-items: center;
+}
+
+.nav-part1>img {
+    height: 80px;
+}
+
+.nav-part1 h4 {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.nav-part2 button {
+    width: 160px;
+    height: 50px;
+    border-radius: 50px;
+    border: 3px solid #91B508;
+    background-color: #000;
+    font-size: 1.1rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+
+video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+
+
+.wrapper {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.page1 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container-hero {
+    width: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.page1 h1 {
+    font-size: 160px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 140px;
+    position: relative;
+}
+
+.page1 h1::before {
+    content: "eat. drink. play.";
+    text-transform: uppercase;
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    font-size: 160px;
+    font-weight: 900;
+    text-transform: uppercase;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height: 140px;
+    color: #000;
+    z-index: -1;
+    -webkit-text-stroke: 3px #d5fa06;
+}
+
+.page1 h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.page1 p {
+    width: 60%;
+
+}
+
+.page1 .arrow {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid #ACDF22;
+    position: absolute;
+    left: -2%;
+    bottom: 0;
+    transition: all 0.1s ease-in;
+
+}
+
+
+.page1 .arrow i {
+    font-size: 50px;
+    font-weight: 200;
+}
+
+.page1 .arrow:hover i {
+    color: #ACDF22;
+}
+
+.page2 {
+    width: 100%;
+    height: 85vh;
+}
+
+.scroller {
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 7rem;
+}
+
+.scroller-part {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scrollbarAni 20s linear infinite;
+}
+
+.scroller h4 {
+    display: inline-block;
+    font-size: 6rem;
+    text-transform: uppercase;
+    margin-right: 40px;
+    font-weight: 900;
+    -webkit-text-stroke: 2px white;
+    color: #000;
+    transition: all .3s linear;
+
+}
+
+.scroller h4:hover {
+    color: #91B508;
+    -webkit-text-stroke: 0;
+
+
+}
+
+
+
+@keyframes scrollbarAni {
+    from {
+        transform: translate(0);
+    }
+
+    to {
+        transform: translate(-100%);
+    }
+
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.about img {
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.about .about-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    text-align: center;
+}
+
+.about-head h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.about .about-head p {
+    line-height: 2rem;
+    font-size: 1.1rem;
+}
+
+.about .about-head .mid {
+    margin-top: 1.6rem;
+    margin-bottom: 1rem;
+
+}
+
+.page3 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card {
+    width: 25%;
+    height: 75%;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+
+.card::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    z-index: 1;
+    border-radius: 20px;
+
+
+}
+
+.card h3 {
+    text-transform: uppercase;
+    position: absolute;
+    font-size: 2rem;
+    bottom: 8%;
+    left: 5%;
+    width: 55%;
+    z-index: 9;
+}
+
+.hover-eff {
+    background-color: #ACDF22;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 11;
+    position: absolute;
+    padding: 5rem 2rem;
+    text-align: center;
+    transition: all 0.2s ease-out;
+    transform: scale(0);
+}
+
+.hover-eff h4 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    color: #000;
+}
+
+.hover-eff p {
+    line-height: 2rem;
+    font-weight: 500;
+    color: #000;
+}
+
+.page3 .card:hover .hover-eff {
+    transform: scale(1);
+
+}
+
+.page4 {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+}
+
+.page4 .banner {
+    width: 100%;
+    height: 75%;
+    background-image: linear-gradient(to top right, #ACDF22, #0B9E3B);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.page4 .banner img {
+    height: 100%;
+    transform: scale(1.5);
+}
+
+.page4 .banner .left {
+    transform: rotate(180deg);
+    transform: scale(1.5);
+}
+
+.page4 .banner h3 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #000;
+    margin: 5rem;
+    text-align: center;
+
+}
+
+.page5 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.page5 img {
+    height: 50px;
+}
+
+.page5 .comment {
+    width: 60%;
+
+}
+
+.page5 .comment h5 {
+
+    font-size: 2rem;
+    text-align: center;
+}
+
+.page5 .left {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+}
+
+.page5 .right {
+    position: absolute;
+    bottom: 15%;
+    right: 15%;
+}
+
+
+
+.page6 {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.page6 h1 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px #91B508;
+    color: #000;
+    position: absolute;
+    top: 10px;
+}
+
+
+.page6 .cards {
+    width: 26%;
+    height: 50%;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.page6 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    scale: 1.1;
+    z-index: 9;
+    transition: all 0.3s ease-in;
+}
+
+.page6 h3 {
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 2rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    background-color: #ACDF22;
+    border-radius: 10px;
+    color: #000;
+    transition: all 0.3s ease-out;
+    z-index: 10;
+}
+
+.page6 .cards:hover h3 {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.page6 .cards:hover img {
+    scale: 1;
+}
+
+footer {
+    width: 100%;
+    height: 49vh;
+    background-color: #ACDF22;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+footer img {
+    height: 100px;
+    z-index: 10;
+}
+
+
+
+footer .action {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+
+
+footer h4 {
+    font-size: 2rem;
+    color: #000;
+    text-transform: uppercase;
+}
+
+footer h5 {
+    font-size: 1rem;
+    color: #000;
+    font-weight: 700;
+}
+
+footer span h5 {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+footer .copyright {
+    color: #000;
+}
+
+.cur:hover .cursor {
+    width: 50px;
+    height: 50px;
+}
